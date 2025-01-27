@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Năm Mới</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F8F8FF;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #DD0000;
+        }
+        .animated-image {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s; /* Hiệu ứng chuyển động */
+        }
+        .animated-image:hover {
+            transform: scale(1.1); /* Phóng to hình khi di chuột */
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #CC3333; /* Màu chữ */
+            display: none; /* Ẩn thông điệp ban đầu */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Chúc Mừng Năm Mới!</h1>
+<img src="ảnh-lì-xì.jpg" alt="Hình động" class="animated-image" onclick="showMessage()">
+
+<div class="message" id="newYearMessage"><p>Mừng xuân gửi chúc bạn thơ ta<br>
+
+Sức khỏe bình an tới mọi nhà<br>
+
+Cuộc sống mưu sinh cùng hưởng lạc<br>
+
+Tết về dạo khúc nhạc tình ca<br>
+
+Xin cùng quyến hữu tìm vui mới<br>
+
+Vất vả bao nhiêu sẽ lại qua<br>
+
+Chào đón vinh quang đường sáng lạn<br>
+
+Xuân về phấn khởi tựa ngàn hoa</p>
+<h5>Bạn sẽ nhận được 5k từ Sơn</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("newYearMessage").style.display = "block"; // Hiện thông điệp
+    }
+</script>
+
+</body>
+</html>
